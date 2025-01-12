@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Course Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <img src="logoo.png" alt="Logo" class="logo">
+            <h2>Apply by entering your details and selecting your courses to proceed!</h2>
+        </div>
+        <form action="/submit" method="POST" class="form">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="middle_name" placeholder="Middle Name">
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone_number" placeholder="Phone Number" required>
+            <select name="courses[]" multiple required>
+                <option value="" disabled selected>Select Courses</option>
+                <option value="artificial_intelligence">Artificial Intelligence</option>
+                <option value="autocad_revit">AUTOCAD/REVIT</option>
+                <option value="app_development">App Development</option>
+                <option value="back_end_programming">Back-End Programming</option>
+                <option value="basic_computer">Basics of Computer</option>
+                <option value="c_plus">Programming Essentials in C</option>
+                <option value="c_plus_plus">Programming Essentials in C++</option>
+                <option value="cctv_training">CCTV Training</option>
+                <option value="coding_programming">Coding/Programming</option>
+                <option value="fiber_optics">Fiber Optics</option>
+                <option value="c_plus_plus">NDG in Linux Essentials</option>
+                <option value="graphic_design">Graphic Design</option>
+                <option value="programming_essentials_python">Programming Essentials in Python</option>
+                <option value="uiux_design">UI/UX Design</option>
+                <option value="video_editing">Video Editing</option>
+                <option value="video_editing">Web Design</option>
+                
+            </select>
+            <button type="submit">Apply Now</button>
+        </form>
+        <p class="reminder_message">Please make sure to review all your details before applying.</p>
+    </div>
+</body>
+</html>
